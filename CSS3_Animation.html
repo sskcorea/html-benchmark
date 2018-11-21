@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<title>CSS-CSS3-Animation</title>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+div {
+	-webkit-animation-name: moving;
+	-webkit-animation-iteration-count: 1;
+}
+
+@-webkit-keyframes move {
+	10%  {-webkit-transform:rotateX(170deg)scale(1.5, 1.7)}
+	20%  {-webkit-transform:translateZ(100px)skew(120deg)}
+	30%  {-webkit-transform:rotate(-230deg)scaleY(2)}
+
+	40%  {-webkit-transform:rotateY(250deg)translate(170px, 70px)}
+	50%  {-webkit-transform:translateY(-210px)rotate(160deg)}
+	60%  {-webkit-transform:scaleZ(1.8)skew(-100deg)}
+
+	70%  {-webkit-transform:translateX(180px)skew(-170deg)}
+	80%  {-webkit-transform:scale(0.5, 0.6)rotateZ(190deg)}
+	90%  {-webkit-transform:rotate(-130deg))scaleX(70deg)}
+}
+</style>
+</head>
+
+<body>
+</body>
+<script src="lib/Utility.js"></script>
+<script src="js/Configuration.js"></script>
+<script src="js/CreateHTML.js"></script>  
+<script src="js/CSS3_Animation.js"></script>
+<script src="js/EBProfiler.js"></script>
+<script src="js/Main.js"></script>
+</html>

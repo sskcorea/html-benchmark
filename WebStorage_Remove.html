@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<title>API-WebStorage_WebStorage_Remove</title>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+  <ol class="Section">
+    <li><a name="Ada">Ada</a>::=<span class="InlineFormula">Programming
+        language dedigned for programming embedded applications</span>.</li>
+    <li><a name="Ada">Ada</a>::=Ada83 | Ada95. [<a
+      href="http://cse.csusb.edu/dick/samples/ada.glossary.html">
+        ada.glossary.html </a>]
+      <p></p></li>
+    <li><a name="ADT">ADT</a>::=<span class="InlineFormula">Abstract
+        data type</span>.</li>
+    <li><a name="ADT">ADT</a>::=<a href="#data_type">data_type</a>
+      with <span class="InlineFormula">hidden <a
+        href="#implementation">implementation</a> details
+    </span>.</li>
+    <li><a name="ADT">ADT</a>::abreviation="Abstract Data Type".
+      <p></p></li>
+    <li><a name="ASCII">ASCII</a>::=<span class="InlineFormula">The
+        original common character code for computers using 8 bits</span>. [<a
+      href="http://cse.csusb.edu/dick/samples/comp.text.ASCII.html">
+        comp.text.ASCII.html </a>]
+      <p></p></li>
+    <li><a name="BASIC">BASIC</a>::="Beginners All-purpose Symbolic
+      Insctruction Code", a family of languages developed for teaching
+      programming and given away with early IBM PCs.
+      <p></p></li>
+    <li><a name="BNF">BNF</a>::=<span class="InlineFormula">Backus
+        Naur Form. An old version of a popular way to define syntax of
+        programming languages</span>. Also see <a href="#EBNF">EBNF</a> and <a
+      href="#XBNF">XBNF</a>.
+      <p></p></li>
+    <li><a name="Boolean">Boolean</a>::adjective=<span
+      class="InlineFormula">Any data type that follows George
+        Boole's algebraic axioms</span>. The commonest Boolean data has two values
+      {true, false} and the operations of and, or, and not. [<a
+      href="http://cse.csusb.edu/dick/maths/math_41_Two_Operators.html#BOOLEAN_ALGEBRA">
+        BOOLEAN_ALGEBRA in math_41_Two_Operators </a>]
+      <p></p></li>
+    <li><a name="C">C</a>::=`Programming Lnaguage invented to help
+      develop operating systems.</li>
+    <li><a name="C">C</a>::= "K&amp;R C" | ANSI_C. [<a
+      href="http://cse.csusb.edu/dick/samples/c.glossary.html">
+        c.glossary.html </a>]</li>
+    <li><a name="C++">C++</a>::=<span class="InlineFormula">Hibrid
+        child of C with object oriented features and <a href="#generic">generic</a>
+        fuunctions and classes
+    </span>.</li>
+    <li><a name="C++">C++</a>::=<span class="InlineFormula">BJarne
+        Stroustroup's C++</span> | <span class="InlineFormula">ANSI/ISO_C++</span>.
+      [<a href="http://cse.csusb.edu/dick/samples/c++.glossary.html">
+        c++.glossary.html </a>]
+      <p></p></li>
+    <li><a name="CLOS">CLOS</a>::="Common LISP Object System`, a
+      modern <a href="#LISP">LISP</a>.
+      <p></p></li>
+    <li><a name="COBOL">COBOL</a>::=<span class="InlineFormula">COmmon
+        Business Oriented Language</span>.
+      <p></p></li>
+    <li><a name="EBNF">EBNF</a>::=<span class="InlineFormula">Extended
+        BNF. A popular way to define syntax as a dictionary of terms defined
+        by using iteration, options, alternatives, etc</span>. [ <a href="#BNF">BNF</a>
+      ].
+      <p></p></li>
+    <li><a name="FORTRAN">FORTRAN</a>::=<span class="InlineFormula">FORmula
+        TRANslation</span>. There have been many FORTRANs. The series includes: I,
+      II, IV, 66, 77, and 90 so far. Its author has said that he doesn't
+      know what the programming language used in the next millenium will
+      look like but he's sure it will be called FORTRAN.
+      <p></p></li>
+    <li><a name="HTML">HTML</a>::=<span class="InlineFormula">HyperText
+        Markup Language</span>. -- used to define pages on the WWW.</li>
+    <li><a name="HTML">HTML</a>::=HTML_1 | HTML_2 | HTML_3 | ... . [<a
+      href="http://cse.csusb.edu/dick/samples/comp.html.glossary.html">
+        comp.html.glossary.html </a>]
+      <p></p></li>
+    <li><a name="Java">Java</a>::=<span class="InlineFormula">Object
+        oriented language that has a C-like syntax</span>.</li>
+    <li><a name="Java">Java</a>::=<span class="InlineFormula">a
+        language for consumer boxes</span> | Java_0 | Java_1.0 | ... [<a
+      href="http://cse.csusb.edu/dick/samples/java.html#Glossary">
+        Glossary in java </a>]
+      <p></p></li>
+    <li><a name="LISP">LISP</a>::=<span class="InlineFormula">LISt
+        Processing language</span>, The key versions are LISP1.5, <a href="#CLOS">CLOS</a>,
+      and <a href="#Scheme">Scheme</a>. [<a
+      href="http://cse.csusb.edu/dick/samples/lisp.html"> lisp.html </a>]
+      <p></p></li>
+    <li><a name="PL">PL</a>::=<span class="InlineFormula">Programming
+        Language</span>.
+      <p></p></li>
+    <li><a name="Prolog">Prolog</a>::=<span class="InlineFormula">PROgramable
+        LOGic</span>. [<a
+      href="http://cse.csusb.edu/dick/samples/prolog.glossary.html">
+        prolog.glossary.html </a>]
+      <p></p></li>
+    <li><a name="Scheme">Scheme</a>::=<span class="InlineFormula">a
+        modern statically <a href="#scoped">scoped</a> version of <a
+        href="#LISP">LISP</a>
+    </span>.
+      <p></p></li>
+    <li><a name="UML">UML</a>::="Unified Modelling Language". [<a
+      href="http://cse.csusb.edu/dick/samples/uml.html"> uml.html </a>]
+      <p></p></li>
+    <li><a name="UNICODE">UNICODE</a>::=<span class="InlineFormula">a
+        new 16 bit International code for characters</span>. Used in <a
+      href="#Java">Java</a>. [<a
+      href="glossary.html#http://www.unicode.org">
+        http://www.unicode.org </a>]
+      <p></p></li>
+    <li><a name="XBNF">XBNF</a>::MATHS=<span class="InlineFormula">An
+        extension to EBNF invented by Dr. Botting so that ASCII can be used
+        to describe formal syntax and semantics</span>. [ <a href="#EBNF">EBNF</a>
+      ].
+      <p></p>
+      <h2>
+        <a name="a, b, c, d">a, b, c, d</a>
+      </h2>
+      <p></p></li>
+    <li><a name="abstract">abstract</a>::mathematical=<span
+      class="InlineFormula">algebras and logics that describe
+        several different concrete algebras and logics</span>.
+      <p></p></li>
+    <li><a name="abstract">abstract</a>::software_engineering=<span
+      class="InlineFormula">descriptions that do not swamp you with
+        unnecessary detail -- they provide enough information to use
+        something without knowing its detailed construction</span>.
+      <p></p></li>
+    <li><a name="accessor">accessor</a>::=<span class="InlineFormula">a
+        <a href="#method">method</a> or member <a href="#function">function</a>
+        that does not change the object to which it is applied, also known
+        as a "const" function.
+    </span>.
+      <p></p></li>
+    <li><a name="actual_parameter">actual_parameter</a>::=<span
+      class="InlineFormula">Any <a href="#parameter">parameter</a>
+        in the <a href="#call">call</a> of a <a href="#subprogram">subprogram</a></span>.
+      <p></p></li>
+    <li><a name="algorithm">algorithm</a>::=<span
+      class="InlineFormula">A description in precise but natural
+        language plus mathematical notation of how a problem is solved</span>.
+      <p></p></li>
+    <li><a name="alias">alias</a>::=<span class="InlineFormula">Two
+        names or identifiers are aliases if they name or identify the same
+        thing</span>.
+      <p></p></li>
+    <li><a name="argument">argument</a>::English=<span
+      class="InlineFormula">A heated discussion</span>.</li>
+    <li><a name="argument">argument</a>::C=parameter. [<a
+      href="glossary.html#parameter"> parameter </a>]
+      <p></p></li>
+    <li><a name="arithmetic_operations">arithmetic_operations</a>::=<span
+      class="InlineFormula">addition, subtraction, multiplication
+        and division ideally forming an <a href="#ADT">ADT</a> with the
+        algebraic properties of a ring or field
+    </span>. [<a
+      href="http://csci.csusb.edu/dick/biba.php?from=glossary&amp;search=Hoare 69"><cite>Hoare
+          69</cite></a>]
+      <p></p></li>
+    <li><a name="array">array</a>::<a href="#data_type">data_type</a>=<span
+      class="InlineFormula">Each array associates each value of one
+        data type with a unique object of another type</span>
+      <p></p></li>
+    <li><a name="assignment">assignment</a>::statement=<span
+      class="InlineFormula">A statement with an expression and a
+        variable. The expression is evaluated and the result is stored in
+        the variables</span>.
+      <p></p></li>
+    <li><a name="associativity">associativity</a>::=<span
+      class="InlineFormula">rules for determining which of two
+        identical infix operators should be evaluated first</span>.
+      <p></p></li>
+    <li><a name="bind">bind</a>::=<span class="InlineFormula">to
+        create a <a href="#binding">binding</a>
+    </span>,</li>
+    <li><a name="binding">binding</a>::=<span class="InlineFormula">A
+        relationship between two things, typically an identifier and some
+        one of its properties or attributes</span>. For example a variable is an
+      identifier bound to a piece of storage in the main memory of the
+      computer.</li>
+    <li><a name="bindings">bindings</a>::=plural of <a
+      href="#binding">binding</a>.
+      <p></p></li>
+    <li><a name="binary">binary</a>::=<span class="InlineFormula">pertaining
+        to 2</span>. Binary operators have two operands. Binary numbers have base 2
+      and use 2 symbols.</li>
+    <li><a name="bit">bit</a>::=<span class="InlineFormula"><a
+        href="#binary">binary</a> digit</span>. A unit of information introduced by
+      Shannon in the 1940's.
+      <p></p></li>
+    <li><a name="block">block</a>::program_structure=<span
+      class="InlineFormula">A piece of source code that has one or
+        more declarations in it</span>.
+      <p></p></li>
+    <li><a name="bool">bool</a>::C++ =Boolean</li>
+    <li><a name="boolean">boolean</a>::=<span class="InlineFormula">mispelling
+        of <a href="#Boolean">Boolean</a>
+    </span>. Since the word comes from a person's name it is correct to use the
+      capital letter and impolite to use lowercase.
+      <p></p></li>
+    <li><a name="bound">bound</a>::=<span class="InlineFormula">result
+        of <a href="#binding">binding</a>
+    </span>.
+      <p></p></li>
+    <li><a name="byte">byte</a>::=<span class="InlineFormula">eight
+        bits</span>.
+      <p></p></li>
+    <li><a name="call">call</a>::=<span class="InlineFormula">A
+        piece of code that transfers control, temporarily, to a subprogram
+        and suspends the original code until the subprogram returns to the
+        following statement etc</span>.
+      <p></p></li>
+    <li><a name="call">call</a>::=<span class="InlineFormula">to
+        make use of something by writing its name and the correct protocol</span>.
+      <p></p></li>
+    <li><a name="call_by">call_by</a>(X)::=<span
+      class="InlineFormula">oldfashioned way of saying: pass_by(X)</span>.
+      <p></p></li>
+    <li><a name="ccc">ccc</a>::=<span class="InlineFormula">ccc.h
+        is a C++ <a href="#header_file">header_file</a> created by Cay
+        Horstman for teaching C++ that we use in out CS1/CS2 courses. A copy
+        has been downloaded onto our CS201/CS202 machines and the lab
+        instructions show how to use it.
+    </span>. [<a href="http://www.horstmann.com/ccc.html"> ccc.html </a>]
+      <p></p></li>
+    <li><a name="chain">chain</a>::data_structure=<span
+      class="InlineFormula">any kind of <a href="#linked_list">linked_list</a>,
+        a set of records where each record identifies the next record in
+        some sequence or other
+    </span>.
+      <p></p></li>
+    <li><a name="class">class</a>::=<span class="InlineFormula">a
+        description of a collection of objects that have similar structures
+        and behaviors</span>.
+      <p></p></li>
+    <li><a name="code">code</a>::noun=<span class="InlineFormula">a
+        piece of text that can not be understood without a key, hence the
+        source code for a program</span>
+      <p></p></li>
+    <li><a name="coercion">coercion</a>::=<span class="InlineFormula">an
+        implicit type conversion that lets a smart compiler work out the
+        wrong meaning for a programmers typing mistake</span>.
+      <p></p></li>
+    <li><a name="compile">compile</a>::verb=<span
+      class="InlineFormula">translate source code into executable
+        object code</span>.</li>
+    <li><a name="compiler">compiler</a>::= lexer -&gt;- parser -&gt;-
+      generator -&gt;- optimizer -&gt;- linker.
+      <p></p></li>
+    <li><a name="component">component</a>::syntactic=<span
+      class="InlineFormula">a part of a compound statement or object</span>,
+    </li>
+    <li><a name="component">component</a>::technology="a unit of
+      composition with contractually specified interfaces and only explicit
+      context dependencies", -- components can be deployed and composed by
+      third parties, often a collection of objects with a given set of
+      methods for handling them and abstract classes that can be defined by
+      other people.
+      <p></p></li>
+    <li><a name="compound">compound</a>::=<span class="InlineFormula">a
+        single statement or object that can have any number of other
+        statements as its parts</span>.
+      <p></p></li>
+    <li><a name="conditional">conditional</a>::=<span
+      class="InlineFormula">an expression or statement that selects
+        one out of a number of alternative subexpressions</span>.
+      <p></p></li>
+    <li><a name="conditional_expression">conditional_expression</a>::=expression
+      with condition:boolean_expression &amp; e1:expression &amp;
+      e2:expression &amp; if value(condition)=true then value=value(e1)
+      &amp; if value(condition)=false then value=value(e2).
+      <p></p></li>
+    <li><a name="control_statement">control_statement</a>::=<span
+      class="InlineFormula">statements that permit a processor to
+        select the next of several possible computations according to
+        various conditions</span>.
+      <p></p></li>
+    <li><a name="constructor">constructor</a>::=<span
+      class="InlineFormula">a method or function in a class that
+        creates a new object of that class</span>.
+      <p></p></li>
+    <li><a name="data_type">data_type</a>::=<span
+      class="InlineFormula">A collection of values together with the
+        operations that use them and produce them, plus the assumptions that
+        can be made about the operations and values</span>.</li>
+    <li><a name="data_type">data_type</a>::=<a href="#structure">structure</a>
+      | <a href="#enumerated">enumerated</a> | <a href="#primitive">primitive</a>
+      | <a href="#array">array</a> | file | <a href="#pointer">pointer</a>
+      | ... .</li>
+    <li><a name="data_type">data_type</a>::formal=Net{ Values::Set,
+      Operations::@(%Values-&gt;Values),
+      Assumptions::Finite_set(well_formed_formula) }.
+      <p></p>
+      <p></p></li>
+    <li><a name="declaration">declaration</a>::= variable_declaration
+      | constant_declaration | type_declaration | subprogram_declaration |
+      ... .
+      <p></p></li>
+    <li><a name="declaration">declaration</a>::=<span
+      class="InlineFormula">A piece of source code that adds a name
+        to the program's <a href="#environment">environment</a> and binds it
+        to a class of meanings, and may also define the name
+    </span>.
+      <p></p></li>
+    <li><a name="default">default</a>::=<span class="InlineFormula">An
+        item provided in place of an omitted item</span>.</li>
+    <li><a name="default_constructor">default_constructor</a>::=`Actions
+      carried out to create an object of a given class when no other data
+      is provided about the object`.
+      <p></p></li>
+    <li><a name="define">define</a>::=<span class="InlineFormula">What
+        a definition does</span>.
+      <p></p></li>
+    <li><a name="definition">definition</a>::=<span
+      class="InlineFormula">A piece of source code or text that
+        binds a name to a precise "definite" meaning. A definition may
+        implicitly also declare the name at the same time or <a href="#bind">bind</a>
+        more information to an already defined name
+    </span>.
+      <p></p></li>
+    <li><a name="dynamic">dynamic</a>::=<span class="InlineFormula">something
+        that is done as the program runs rather than by the compiler before
+        the program runs</span>.
+      <p></p></li>
+    <li><a name="dynamic_binding">dynamic_binding</a>::=<span
+      class="InlineFormula">A binding that can be made at any time
+        as a program runs and may change as the program runs</span>.
+      <p></p></li>
+    <li><a name="dynamically_scoped">dynamically_scoped</a>::=<span
+      class="InlineFormula">something that uses <a
+        href="#dynamic_scoping">dynamic_scoping</a></span>.</li>
+    <li><a name="dynamic_scoping">dynamic_scoping</a>::=<span
+      class="InlineFormula">determining the global <a
+        href="#environment">environment</a> of a subprogram as that which
+        surrounds its call
+    </span>.
+      <p></p></li>
+    <li><a name="dynamic_polymorphism">dynamic_polymorphism</a>::=<span
+      class="InlineFormula">A kind of polymorphism where the current
+        type of an object determines which of several alternate subprograms
+        are invoked as the program runs</span>.
+      <h2>
+        <a name="e,f,g,h">e,f,g,h</a>
+      </h2>
+      <p></p></li>
+    <li><a name="encapsulated">encapsulated</a>::programming=<span
+      class="InlineFormula">coding that can be changed with out
+        breaking client code</span>.</li>
+    <li><a name="encapsulated">encapsulated</a>::Sebesta=<span
+      class="InlineFormula">being able to place all relevant
+        information in the same piece of code -- for example data and the
+        operations that manipulate it in a C++ class</span>.
+      <p></p></li>
+    <li><a name="encapsulation">encapsulation</a>::programming=<span
+      class="InlineFormula">The ability to hide unwanted details
+        inside an interface so that the result works like a black box or
+        vending machine - providing useful services to many clients(programs
+        or people)</span>.
+      <p></p></li>
+    <li><a name="enumerated">enumerated</a>::data_type=<span
+      class="InlineFormula">data defined by listing its possible
+        values</span>.
+      <p></p></li>
+    <li><a name="exception">exception</a>::=<span
+      class="InlineFormula">a mechanism for handling abnormal
+        situations</span>.
+      <p></p></li>
+    <li><a name="expression">expression</a>::=<span
+      class="InlineFormula">A shorthand description of a calculation</span>.
+      [<a href="glossary.html#mathematical_expression">
+        mathematical_expression </a>]
+      <p></p></li>
+    <li><a name="fixed_point">fixed_point</a>::=`A form of arithmetic
+      that always has the same number of places on either side of the
+      decimal point giving bounded rounding errors, speed, simplicity, and
+      a comparatively small range'. Contrast with <a href="#floating_point">floating_point</a>.
+      <p></p></li>
+    <li><a name="float">float</a>::C=<span class="InlineFormula">short
+        floating point data type</span>.</li>
+    <li><a name="floating_point">floating_point</a>::=<span
+      class="InlineFormula">A form of arithmetic that always
+        preserves the same number of digits but allows the decimal point to
+        be placed anywhere among them. This gives unbounded errors, a wider
+        range and a more complex processor</span>.
+      <p></p></li>
+    <li><a name="formal">formal</a>::=<span class="InlineFormula">something
+        that is abstract or mathematical</span> | <a href="#formal_parameter">formal_parameter</a>
+      | <span class="InlineFormula">a process that has more or less
+        well defined rules</span>.
+      <p></p></li>
+    <li><a name="formal_parameter">formal_parameter</a>::=<span
+      class="InlineFormula">The symbol used inside a <a
+        href="#subprogram">subprogram</a> in place of the <a
+        href="#actual_parameter">actual_parameter</a> provided when the <a
+        href="#subprogram">subprogram</a> is called
+    </span>. [<a href="glossary.html#call"> call </a>]
+      <p></p></li>
+    <li><a name="function">function</a>::Ada=<span
+      class="InlineFormula">A subprogram that returns a value but
+        can not change its parameters or have side effects</span>.</li>
+    <li><a name="function">function</a>::C=<span
+      class="InlineFormula">Any subprogram</span>.</li>
+    <li><a name="function">function</a>::business=<span
+      class="InlineFormula">What you do to earn your pay</span>.</li>
+    <li><a name="function">function</a>::mathematics=<span
+      class="InlineFormula">A total many to one relation between a
+        domain and a codomain</span>.
+      <p></p></li>
+    <li><a name="fundamental_data_type">fundamental_data_type</a>::=A
+      type of data that is not defined by a class, struct, or union
+      declaration.
+      <p></p></li>
+    <li><a name="garbage">garbage</a>::=`A piece of storage that has
+      been allocated but can no longer be accessed by a program. If not
+      collected and recycled garbage can cause a memory leak'.
+      <p></p></li>
+    <li><a name="generic">generic</a>::=<span class="InlineFormula">Something
+        that is common accross several species or individuals</span>.</li>
+    <li><a name="generic">generic</a>::Ada=<span
+      class="InlineFormula">A package or Subprogram that can
+        generate a large number of similar yet different packages or
+        subprograms</span>. See template.
+      <p></p></li>
+    <li><a name="global">global</a>::=<span class="InlineFormula">Something
+        that can be used in all parts of program</span>. Compare with [<a
+      href="glossary.html#local"> local </a>]
+      <p></p></li>
+    <li><a name="goto">goto</a>::=<span class="InlineFormula">
+        a 4 letter word no longer considered correct that is still usable in
+        all practical languages to indicate an unconditional jump</span>.
+      <p></p></li>
+    <li><a name="grammar">grammar</a>::math=<span
+      class="InlineFormula">A set of definitions that define the
+        syntax of a language. A grammar generates the strings in the
+        language and so implicitly describes how to recognize and parse
+        strings in the language</span>. [<a href="glossary.html#generate">
+        generate </a>] [<a href="glossary.html#parse"> parse </a>] [<a
+      href="glossary.html#recognise"> recognise </a>]
+      <p></p></li>
+    <li><a name="hardware">hardware</a>::=<span class="InlineFormula">The
+        part of a computer system that is damaged when dropped from a
+        suitable hieght onto a hard floor</span>.
+      <p></p></li>
+    <li><a name="header">header</a>::C++=<span class="InlineFormula">the
+        first part of a function definition that describes how to call the
+        function but does not describe what it does. The header defines the
+        fucntion's signature. A function header can be separated from its
+        function when the body of the function is replaced by a semicolon.
+        This allows <a href="#information_hiding">information_hiding</a> and
+        separte development.
+    </span>.</li>
+    <li><a name="header_file">header_file</a>::C++ =<span
+      class="InlineFormula">A collection of function headers, class
+        interfaces, constants and definitions that is read by a compiler and
+        changes the interpretation of the rest of the program by (for
+        example) defining operation for handling strings.</span>. Contrast with <a
+      href="#object_file">object_file</a>.
+      <p></p></li>
+    <li><a name="heap">heap</a>::=<span class="InlineFormula">Storage
+        that can be allocated and deallocated on demand in any pattern</span>.Compare
+      with <a href="#stack">stack</a>. Notice that this heap is not an
+      example of the heap data structure.
+      <p></p></li>
+    <li><a name="heap">heap</a>::data_structur=`A clever way of
+      storing a binary tree inside an array that allows efficient insertion
+      and deletion of data into an ordered structure`.
+      <p></p></li>
+    <li><a name="hidden">hidden</a>::=<span class="InlineFormula">result
+        of <a href="#hiding">hiding</a>
+    </span>.</li>
+    <li><a name="hiding">hiding</a>::=<span class="InlineFormula">Process
+        of puting something out of sight, out of mind, and/or out of reach</span>.
+      [<a href="glossary.html#information_hiding"> information_hiding </a>]
+      <p></p>
+      <h2>
+        <a name="i,j,k,l">i,j,k,l</a>
+      </h2>
+      <p></p></li>
+    <li><a name="identifier">identifier</a>::lexeme=`a name used in a
+      programming language to identify something else - a <a
+      href="#variable">variable</a>, <a href="#function">function</a>, <a
+      href="#procedure">procedure</a>, etc.`.
+      <p></p></li>
+    <li><a name="identity_operation">identity_operation</a>::=<span
+      class="InlineFormula">An operation that returns its arguments
+        unchanged</span>.</li>
+    <li><a name="identity">identity</a>::mathematics=<span
+      class="InlineFormula">An equation that is true for all values
+        of its variables</span>. [<a href="glossary.html#equation"> equation </a>]
+      <p></p></li>
+    <li><a name="ignorance">ignorance</a>::=<span
+      class="InlineFormula">the comforting result of ignoring
+        something</span>.
+      <p></p></li>
+    <li><a name="implementation">implementation</a>::=<span
+      class="InlineFormula">the way something is made to work. The
+        grubby details of code and data structures. There are usually many
+        ways to implement something.</span></li>
+    <li><a name="implemented">implemented</a>::past_participle, <span
+      class="InlineFormula">X is implemented by Y</span> means that an <a
+      href="#implementation">implementation</a> process has created
+      something called Y that behaves like X.
+      <p></p></li>
+    <li><a name="in">in</a>::=<span class="InlineFormula">A
+        way of handling parameters that gives a subprogram access to the
+        value of an actual parameter without permitting the subprogram to
+        change the actual parameter. OFten implemented by <a
+        href="#pass_by_value">pass_by_value</a>
+    </span>.
+      <p></p></li>
+    <li><a name="infix">infix</a>::=<span class="InlineFormula">An
+        operator that is placed between operands. Infix notation dates back
+        to the invention of algebra 3 or 4 hundred years ago</span>.
+      <p></p></li>
+    <li><a name="information_hiding">information_hiding</a>::Parnas=<span
+      class="InlineFormula">The doctrine that design choices should
+        be hidden by the modules in which they are implemented</span>
+      <p></p></li>
+    <li><a name="information_hiding">information_hiding</a>::pop=<span
+      class="InlineFormula">not being allowed to read the code</span>. [<a
+      href="glossary.html#encapsulation"> encapsulation </a>]
+      <p></p>
+      <p></p></li>
+    <li><a name="inheritance">inheritance</a>::objects=<span
+      class="InlineFormula">The abillity to easily construct new
+        data types or classes by extending existing structures, data types,
+        or classes</span>.
+      <p></p></li>
+    <li><a name="inout">inout</a>::=<span class="InlineFormula">A
+        way of handling parameters that lets a subprogram both use and
+        change the values of an actual parameter. It can be implemented by <a
+        href="#pass_by_reference">pass_by_reference</a>, pass_by_name, or
+        pass_by_value_result
+    </span>.
+      <p></p></li>
+    <li><a name="input">input</a>::=<span class="InlineFormula">data
+        supplied to some program, subprogram, OS, machine, system, or
+        abstraction</span>.
+      <p></p></li>
+    <li><a name="int">int</a>::=integer::data_type=<span
+      class="InlineFormula"><a href="#fixed_point">fixed_point</a>
+        data representing a subset of the whole numbers</span>.
+      <p></p></li>
+    <li><a name="interpreter">interpreter</a>::program=<span
+      class="InlineFormula">A program that translates a single
+        instruction of a prgram and executes it before moving on to the next
+        one</span>.
+      <p></p></li>
+    <li><a name="item">item</a>::=field::=<span class="InlineFormula">A
+        <a href="#component">component</a> in a <a href="#compound">compound</a>
+        data <a href="#structure">structure</a>
+    </span>.
+      <p></p></li>
+    <li><a name="iteration">iteration</a>::=<span
+      class="InlineFormula">see <a href="#loop">loop</a></span>.
+      <p></p></li>
+    <li><a name="iterator">iterator</a>::=<span class="InlineFormula">an
+        object that is responsible for tracking progress through a
+        collection of other objects. Often it is implemented as a reference
+        or pointer plus <a href="#methods">methods</a> for navigating the
+        set of objects
+    </span>. The C++ <a href="#STL">STL</a> provides many iterators [<a
+      href="http://www.sgi.com/Technology/STL/Iterators.html">
+        Iterators.html </a>] <a href="#Java">Java</a> has an Enumeration class
+      for iterators: [<a
+      href="http://cse.csusb.edu/dick/samples/java.class.tree.html#Enumeration">
+        Enumeration in java.class.tree </a>]
+      <p></p>
+      <p></p></li>
+    <li><a name="link">link</a>::verb=<span class="InlineFormula">to
+        connect to things together. In computing: to place addresses in one
+        part of memory so that they identify other parts of memory.</span>
+      <p></p></li>
+    <li><a name="loader">loader</a>::=<span class="InlineFormula">nowadays
+        a <a href="#link_loader">link_loader</a>, in the past any program
+        that placed an executable program and placed it into memory.
+    </span>.</li>
+    <li><a name="linker">linker</a>::=<a href="#link_loader">link_loader</a>.
+    </li>
+    <li><a name="link_editor">link_editor</a>::IBM=<a
+      href="#link_loader">link_loader</a>.</li>
+    <li><a name="link_loader">link_loader</a>::=`A program that
+      carries out the last stage of compilatio by <a href="#binding">binding</a>
+      together the different uses of identifiers in different files`.
+      <p></p></li>
+    <li><a name="local">local</a>::=<span class="InlineFormula">related
+        to the current instruction rather than a larger context</span>. [<a
+      href="glossary.html#global"> global </a>]
+      <p></p></li>
+    <li><a name="logical">logical</a>::=<span class="InlineFormula">In
+        accordance with the speakers preconceptions</span>. [<a
+      href="glossary.html#physical"> physical</a>] .
+      <p></p></li>
+    <li><a name="long">long</a>::C=<span class="InlineFormula">A
+        <a href="#Fixed_point">Fixed_point</a> data type that may have more
+        bits than ints
+    </span>.
+      <p></p></li>
+    <li><a name="loop">loop</a>::=<span class="InlineFormula">see
+        <a href="#iteration">iteration</a>
+    </span>, for some 99 odd examples of loops in 99 or so languages see [<a
+      href="http://www.ionet.net/~timtroyr/funhouse/beer.html">
+        beer.html </a>]
+      <p></p>
+      <h2>
+        <a name="m,n,o,p,q">m,n,o,p,q</a>
+      </h2>
+      <p></p></li>
+    <li><a name="map">map</a>::=function::=mapping,</li>
+    <li><a name="maps">maps</a>::noun=<span class="InlineFormula">plural
+        of <a href="#map">map</a>
+    </span>.</li>
+    <li><a name="mapping">mapping</a>::mathematics=<span
+      class="InlineFormula">A relationship that takes something and
+        turns it into something uniquely determined by the relationship</span>.
+      <p></p></li>
+    <li><a name="mathematical_expression">mathematical_expression</a>::=<span
+      class="InlineFormula">horror, diligence, worry, and (rare)
+        relief</span>.
+      <p>
+        Source: <cite>The Rev'd Charles L. Dodgson, Christchurch,
+          Oxford, UK.</cite>
+      </p>
+      <p></p></li>
+    <li><a name="Matrix">Matrix</a>::Mathematics=<span
+      class="InlineFormula">An <a href="#ADT">ADT</a> that can be <a
+        href="#implemented">implemented</a> by rectangular arrays and has
+        many of the <a href="#arithmetic_operations">arithmetic_operations</a>
+        defined on them. A matrix abstracts the structure and behavior of
+        linear <a href="#maps">maps</a></span>.
+      <p></p></li>
+    <li><a name="method">method</a>::dictionary=<span
+      class="InlineFormula">a step by step prescription of a way to
+        achieve some class of goal</span>.</li>
+    <li><a name="method">method</a>::methodologist=<span
+      class="InlineFormula">a more or less rigorous set of rules
+        that may help solve some set of problems</span>.</li>
+    <li><a name="method">method</a>::<a href="#OO">OO</a>=<span
+      class="InlineFormula">something that an object can perform or
+        suffer often determined by the class of the object rather than the
+        specific object</span>. In C++ a method is called a member function.</li>
+    <li><a name="methodology">methodology</a>::USA=<span
+      class="InlineFormula">an expensive and overly complicated
+        method</span>.</li>
+    <li><a name="methodology">methodology</a>::Europe=<span
+      class="InlineFormula">The studey of methods</span>.</li>
+    <li><a name="narrowing">narrowing</a>::=<span
+      class="InlineFormula">a conversion that converts an object to
+        a type that cannot include all the possible values of the object</span>.
+      <p></p></li>
+    <li><a name="mutator">mutator</a>::=A <a href="#method">method</a>
+      that is permitted to change the state of the object to which it is
+      applied.
+      <p></p></li>
+    <li><a name="natural_numbers">natural_numbers</a>::=<span
+      class="InlineFormula">The numbers 1,2,3,4..</span>.
+      <p></p></li>
+    <li><a name="object">object</a>::code=<span class="InlineFormula">A
+        piece identifiable storage that can suffer and/or perform various
+        operations defined by the objects type</span>.</li>
+    <li><a name="object">object</a>::analysis=<span
+      class="InlineFormula">Something that is uniqely identifiable
+        by the user</span>.</li>
+    <li><a name="object">object</a>::design=<span
+      class="InlineFormula">A module that encapsulates a degree of
+        intelligence and know how and has speciallized responsibilities</span>. [<a
+      href="http://cse.csusb.edu/dick/samples/objects.glossary.html">
+        objects.glossary.html </a>]
+      <p></p></li>
+    <li><a name="object_file">object_file</a>::=`A piece of compiled
+      code that is <a href="#linked">linked</a> into a compiled program
+      after compilation and either during loading or when the program is
+      running.". Do not confuse this use of <a href="#object">object</a>
+      with the later use in programming, analysis and design.
+      <p></p></li>
+    <li><a name="operation">operation</a>::=<span
+      class="InlineFormula">One of a set of functions with special
+        syntax and semantics that can be used to construct an <a
+        href="#expression">expression</a>
+    </span>.</li>
+    <li><a name="operator">operator</a>::lexeme=<span
+      class="InlineFormula">A symbol for an <a href="#operation">operation</a></span>.
+      Operators can <a href="#infix">infix</a>, <a href="#prefix">prefix</a>,
+      or <a href="#postfix">postfix</a>.
+      <p></p></li>
+    <li><a name="operator_associativity">operator_associativity</a>::=<span
+      class="InlineFormula">rules that help define the order in
+        which an expression is evaluated when two adjacent infix operators
+        are identical</span>.
+      <p></p></li>
+    <li><a name="operator_precedence">operator_precedence</a>::=<span
+      class="InlineFormula">rules that help define the order in
+        which an expression is evaluated when two infix operators can be
+        done next</span>.
+      <p></p></li>
+    <li><a name="out">out</a>::=<span class="InlineFormula">Any
+        mode of passing parameters that permits the subprogram to give a
+        value to an actual parameter without letting the subprogram no what
+        the original value of the subprogram. Only available for general
+        parameters in ada, it can be implemented by <a
+        href="#pass_by_result">pass_by_result</a>
+    </span>.
+      <p></p></li>
+    <li><a name="output">output</a>::=<span class="InlineFormula">A
+        means whereby data or objects are passed from a part to a wider
+        context</span> -- for example a program sending data to the operating
+      system so that you can see it on the screen.
+      <p></p></li>
+    <li><a name="overloading">overloading</a>::=<span
+      class="InlineFormula">giving multiple meanings to a symbol
+        depending on its context</span>.
+      <p></p></li>
+    <li><a name="overload">overload</a>::=<span class="InlineFormula">to
+        provide multiple context dependent meanings for a symbol in a
+        language</span>.
+      <p></p>
+      <p></p></li>
+    <li><a name="parameter">parameter</a>::mathematics=<span
+      class="InlineFormula">A variable constant, or perhaps a
+        constant variable</span>.
+      <p></p></li>
+    <li><a name="parameter">parameter</a>::programming=<span
+      class="InlineFormula">Something that is used in a subprogram
+        that can be changed when the subprogram is called</span>. [<a
+      href="glossary.html#formal_parameter"> formal_parameter </a>] [<a
+      href="glossary.html#actual_parameter"> actual_parameter </a>]
+      <p></p></li>
+    <li><a name="parameter">parameter</a>::TV_pundits=perimeter. [<a
+      href="glossary.html#ignorance"> ignorance </a>]</li>
+    <li><a name="paramaters">paramaters</a>::=plural of <a
+      href="#parameter">parameter</a>.
+      <p></p></li>
+    <li><a name="parameter_passing">parameter_passing</a>::=<span
+      class="InlineFormula">the means by which the <a
+        href="#actual_parameters">actual_parameters</a> in a <a href="#call">call</a>
+        of a <a href="#subprogram">subprogram</a> are connected with the <a
+        href="#formal_parameters">formal_parameters</a> in the definition of
+        the subprogram
+    </span>.
+      <p></p></li>
+    <li><a name="parameter_passing">parameter_passing</a>::= <a
+      href="#pass_by_value">pass_by_value</a> | <a href="#pass_by_result">pass_by_result</a>
+      | <a href="#pass_by_value_result">pass_by_value_result</a> | <a
+      href="#pass_by_name">pass_by_name</a> | <a href="#pass_by_reference">pass_by_reference</a>.
+      <p></p></li>
+    <li><a name="parentheses">parentheses</a>::="(" | ")". Plural of
+      parenthesis.
+      <p></p></li>
+    <li><a name="parse">parse</a>::=`To convert a sequence of tokens
+      into a data structures (typically a tree and a name table) that can
+      be used to interpret or translate the sequence'.
+      <p></p></li>
+    <li><a name="pass_by_value">pass_by_value</a>::=<a
+      href="#parameter_passing">parameter_passing</a> where <span
+      class="InlineFormula">The actual parameter is evaluated (if
+        necessary) and the value placed in a location bound to the formal
+        parameter</span>.
+      <p></p></li>
+    <li><a name="pass_by_reference">pass_by_reference</a>::=<a
+      href="#parameter_passing">parameter_passing</a> where <span
+      class="InlineFormula">The parameter is implemented by
+        providing an access path to the actual parameter from the formal
+        parameter. Actions written as if they use or change the formal
+        parameter use or change the actual parameter instead</span>.
+      <p></p></li>
+    <li><a name="pertaining">pertaining</a>::=<span
+      class="InlineFormula">a neat word to put at the start of a
+        definition indicating some kind of loose but intuitive connection</span>.
+      <p></p></li>
+    <li><a name="physical">physical</a>::=<span class="InlineFormula">In
+        accordance with the speakers hardware</span>. [<a
+      href="glossary.html#logical"> logical </a>]
+      <p></p></li>
+    <li><a name="pointer">pointer</a>::=data_type with <span
+      class="InlineFormula">values that are addresses of other items
+        of data</span>.
+      <p></p></li>
+    <li><a name="polymorphism">polymorphism</a>::objects=<span
+      class="InlineFormula">The ability of a function to apply to
+        more than one type of object or data</span>.
+      <p></p></li>
+    <li><a name="polymorphism">polymorphism</a>::=<a
+      href="#ad_hoc_polymorphism">ad_hoc_polymorphism</a> | <a
+      href="#parametric_polymorphism">parametric_polymorphism</a> | <a
+      href="#dynamic_type_binding">dynamic_type_binding</a> | <a
+      href="#dynamic_polymorphism">dynamic_polymorphism</a>.
+      <p></p></li>
+    <li><a name="ad_hoc_polymorphism">ad_hoc_polymorphism</a>::=<a
+      href="#overloading">overloading</a>.
+      <p></p></li>
+    <li><a name="parametric_polymorphism">parametric_polymorphism</a>::=<span
+      class="InlineFormula">A piece of code describes a general form
+        of some code by using a parameter. Different instances or special
+        cases are created by replace these parameters by actual parameters</span>.
+      Templates in C++, Generics in Ada, and Functors in SML are particular
+      implementations of this idea.
+      <p></p></li>
+    <li><a name="positional_parameter">positional_parameter</a>::=<span
+      class="InlineFormula">A <a href="#parameter">parameter</a>
+        that is bound by its position
+    </span>.
+      <p></p></li>
+    <li><a name="postfix">postfix</a>::<a href="#operator">operator</a>=<span
+      class="InlineFormula">An operator that is placed after its
+        single operand</span>.
+      <p></p></li>
+    <li><a name="prefix">prefix</a>::<a href="#operator">operator</a>=<span
+      class="InlineFormula">An operator that is placed in front of
+        its single operand</span>.
+      <p></p></li>
+    <li><a name="predicate">predicate</a>::Prolog=<span
+      class="InlineFormula">A procedure that can fail or succeed to
+        achieve a goal</span>. Success is finding an instance of a formula that is
+      true and failure means failing to find such an instance. It is
+      assumed that failing to find a solution is proof that the predicate
+      is false. In fact the definition of the predicate may be incomplete
+      or some infinite instance is needed to fit the predicate.
+      <p></p></li>
+    <li><a name="predicate">predicate</a>::logic=<span
+      class="InlineFormula">A formula that may contain variables,
+        that when evaluated should be either true or false</span>.
+      <p></p></li>
+    <li><a name="primitive">primitive</a>::=<span
+      class="InlineFormula">something that does not need to be
+        defined</span>.
+      <p></p></li>
+    <li><a name="program">program</a>::English=<span
+      class="InlineFormula">a list of things to do</span>.</li>
+    <li><a name="program">program</a>::computer=<span
+      class="InlineFormula">a set of instructions that a computer is
+        stupid enough to abey, written by a programmer, and often translated
+        by a compiler into a code used by a machine</span>.</li>
+    <li><a name="protocol">protocol</a>::networking=<span
+      class="InlineFormula">Rules for sending and receiving data and
+        commands over the network</span>.
+      <p></p></li>
+    <li><a name="protocol">protocol</a>::subprogram=<span
+      class="InlineFormula">Rules for calling a subprogram</span>
+      <p></p></li>
+    <li><a name="prototype">prototype</a>::C=protocol. [<a
+      href="glossary.html#protocol"> protocol </a>]
+      <p></p></li>
+    <li><a name="prototype">prototype</a>::software_engineering=<span
+      class="InlineFormula">A piece of software that requires more
+        work before it is finished, but is complete enough for the value of
+        the finished product to be evaluated or the currant version improved</span>.
+      <p></p></li>
+    <li><a name="quicksort">quicksort</a>::algorithm=split the data
+      into two roughly equal parts with all the lesser elements in one and
+      the greater ones in the other and then sort each part. -- Prof. C. A.
+      R. Hoare wrote this a young programmer and team leader. His future
+      career started with the publication of this elegant <a
+      href="#recursion">recursion</a> for placing an array of numbers into
+      order.
+      <h2>
+        <a name="r,s,t,u">r,s,t,u</a>
+      </h2>
+      <p></p></li>
+    <li><a name="record">record</a>::=record_structure::=<a
+      href="#structure">structure</a>.data_type.
+      <p></p></li>
+    <li><a name="recurse">recurse</a>::=<span class="InlineFormula">a
+        step in the process of recursion</span>. [<a href="glossary.html#recursion">
+        recursion </a>]
+      <p></p></li>
+    <li><a name="recursion">recursion</a>::=<span
+      class="InlineFormula">A technique of defining something in
+        terms of a smaller or simpler object of the same type. If you don't
+        understand this then see recurse.</span> [<a href="glossary.html#recurse">
+        recurse </a>]
+      <p></p>
+      <p></p></li>
+    <li><a name="relation">relation</a>::=relationship.
+      <p></p></li>
+    <li><a name="relational">relational</a>::=<span
+      class="InlineFormula">pertaining to a relation</span>.
+      <p></p></li>
+    <li><a name="relational_data_base">relational_data_base</a>::=<span
+      class="InlineFormula">Blessed by Codd and/or cursed by Bachman</span>.
+      <p></p></li>
+    <li><a name="relational_operator">relational_operator</a>::=<span
+      class="InlineFormula">an infix operator that returns a Boolean
+        value when given non-Boolean operands</span>.
+      <p></p></li>
+    <li><a name="relational_expression">relational_expression</a>::=<span
+      class="InlineFormula">an infix expression in which two
+        non-Boolean values are compared and a Boolean value returned</span>.
+      <p></p></li>
+    <li><a name="scope">scope</a>::=<span class="InlineFormula">the
+        parts of a program where a particular identifier has a particular
+        meaning (set of <a href="#bindings">bindings</a>)
+    </span>.</li>
+    <li><a name="scoped">scoped</a>::=<span class="InlineFormula">pertains
+        to languages with particular <a href="#scoping">scoping</a> rules
+    </span>.</li>
+    <li><a name="scoping">scoping</a>::=<span class="InlineFormula">the
+        rules used to determine an identifier's <a href="#scope">scope</a>
+        in a language
+    </span>, see <a href="#dynamic_scoping">dynamic_scoping</a> and <a
+      href="#static_scoping">static_scoping</a>.
+      <p></p></li>
+    <li><a name="selection">selection</a>::=<span
+      class="InlineFormula">a statement that chooses between several
+        possible executions paths in a program</span>.
+      <p></p></li>
+    <li><a name="semantics">semantics</a>::=<span
+      class="InlineFormula">A description of how the meaning of a
+        valid statement or sentence can be worked out from its parsed form</span>.
+      <p></p></li>
+    <li><a name="set">set</a>::=<span class="InlineFormula">a
+        collection of objects, usually of the same type, described either by
+        enumarating the elements or by stating a common property, or by
+        describing rules for constructing items in the set</span>.
+      <p></p></li>
+    <li><a name="stack">stack</a>::=<span class="InlineFormula">A
+        collection of data items where new items are added and old items
+        retrieved at the same place, so that the last item added is always
+        the first item retrieved,and so on. An important part of compilers,
+        interpreters, processors and programs</span>.
+      <p></p></li>
+    <li><a name="static">static</a>::C=<span class="InlineFormula">a
+        keyword with too many different meanings pertaining to the life
+        history and scope of varaibles</span>.
+      <p></p></li>
+    <li><a name="structure">structure</a>::data_type=<span
+      class="InlineFormula">A finite collection of named items of
+        data of different types</span>.
+      <p></p></li>
+    <li><a name="side_effect">side_effect</a>::=<span
+      class="InlineFormula">A function or expression has a
+        side_effect if executing it changes the values of global variables
+        or its arguments</span>.
+      <p></p></li>
+    <li><a name="structure">structure</a>::program=sequence |
+      selection | iteration | concurrent.
+      <p></p></li>
+    <li><a name="subprogram">subprogram</a>::=<span
+      class="InlineFormula">A piece of code that has been named and
+        can be referred to by that name (called) as many times as is needed.
+        Either a procedure or a function</span>.
+      <p></p></li>
+    <li><a name="subprogram_header">subprogram_header</a>::=<span
+      class="InlineFormula">The part of a subprogram definition that
+        describes how the subprogram can be called without defining how it
+        works</span>.
+      <p></p></li>
+    <li><a name="subtype">subtype</a>::=<span class="InlineFormula">A
+        type S is a subtype of type T if every valid operation on an object
+        of type T is also a a valid operation of type S</span>.
+      <p></p></li>
+    <li><a name="syntax">syntax</a>::=<span class="InlineFormula">A
+        description of the rules that determine the validity and parsing of
+        sentences or statements in a language</span>. [<a
+      href="glossary.html#grammar"> grammar </a>]
+      <p></p>
+      <p></p></li>
+    <li><a name="ternary">ternary</a>::=<span class="InlineFormula">pertaining
+        to 3. Ternary operators have two operands. Ternary numbers have base
+        3 and use 3 symbols</span>.
+      <p></p></li>
+    <li><a name="token">token</a>::=<span class="InlineFormula">a
+        particular representation of a lexemes</span>.
+      <p></p></li>
+    <li><a name="tree">tree</a>::=<span class="InlineFormula">A
+        collection of connected objects called nodes with all nodes
+        connected indirectly by precisely one path</span>. An ordered tree has a
+      root and the connections lead from this root to all other nodes.
+      Nodes at the end of the paths are caled leaves. The connections are
+      called branches. All computer science tress are drawn upside-down
+      with the root at the top and the leaves at the bottom.
+      <p></p></li>
+    <li><a name="type">type</a>::=<span class="InlineFormula">a
+        collection of similar objects</span>, See <a href="#ADT">ADT</a> and <a
+      href="#data_type">data_type</a>. Objects can be fundamental,
+      pointers, or have theri type determined by their class.
+      <p></p></li>
+    <li><a name="unary">unary</a>::=<span class="InlineFormula">pertaining
+        to one. unary operators have one operand, unary numbers use base 1
+        and one symbol</span>.
+      <h2>
+        <a name="v,w,x,y,z">v,w,x,y,z</a>
+      </h2>
+      <p></p></li>
+    <li><a name="virtual">virtual</a>::C++ = <span
+      class="InlineFormula">magic</span>. Well.... to be more serious. A
+      member function or method is virtual if when applied to a pointer the
+      class of the object pointed at is used rather than the class of the
+      pointer. Virtual inheritance means that when a class in inheritted by
+      two different path only one single parent object is stored for both
+      paths.
+      <p></p></li>
+    <li><a name="visual">visual</a>::micro-soft=<span
+      class="InlineFormula">any product that is more expensive than
+        the previous version</span>.
+      <p></p></li>
+    <li><a name="void_function">void_function</a>::C=<span
+      class="InlineFormula">a procedure</span>.</li>
+    <li><a name="void_pointer">void_pointer</a>::C=<span
+      class="InlineFormula">A pointer to an object of unknown type
+        and size</span>.</li>
+    <li><a name="void">void</a>::Ken_Thompson=<span
+      class="InlineFormula">An Abortion</span>.
+      <p></p>
+      <p></p></li>
+    <li><a name="widening">widening</a>::=<span class="InlineFormula">a
+        conversion that places an object in a type that includes all the
+        possible values of the type, and then some</span>.</li>
+  </ol>
+</body>
+<script src="lib/modernizr.custom.04068.js"></script>
+<script src="lib/Utility.js"></script>
+<script src="js/Configuration.js"></script>
+<script src="js/WebStorage_Remove.js"></script>
+<script src="js/EBProfiler.js"></script>
+<script src="js/Main.js"></script>
+</html>

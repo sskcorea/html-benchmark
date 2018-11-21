@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>Profiler</title>
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+<head>
+<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body align="center">
+	<h1>HTML5 Profiler v0.1</h1>
+	<h3></h3>
+	<hr>
+	<h2>Profile lists</h2>
+
+	<script type="text/javascript" src="js/Configuration.js"></script>
+	<script type="text/javascript" src="lib/Utility.js"></script>
+	<script>
+		function onstart() {
+			var url = TESTLIST[0].name + ".html#integrated";
+			window.localStorage.clear();
+			window.open(url, "_self");
+		}
+		window.onload = function() {
+			var a;
+			var d;
+			var p = [];
+			var pi = 0;
+			var i = 0;
+			var start;
+			var col = Math.floor(utility.xy().x / (200 + 50));
+
+			TESTLIST.forEach(function(item) {
+				if (i == 0) {
+					start = document.createElement('div');
+					start.setAttribute('class', 'btnContainer');
+					start.setAttribute('onclick', 'onstart()');
+					start.innerHTML = 'start';
+
+					p[pi] = document.createElement('div');
+					p[pi].setAttribute('style', 'display:inline-flex;');
+					p[pi].appendChild(start);
+				}
+
+				if ((i + 1) % col == 0) {
+					pi = (i + 1) / col;
+					p[pi] = document.createElement('div');
+					p[pi].setAttribute('style', 'display:inline-flex;');
+
+				}
+
+				a = document.createElement('a');
+				d = document.createElement('div');
+
+				a.setAttribute('href', item.name + '.html');
+				a.innerHTML = item.name;
+
+				d.setAttribute('class', 'itemContainer');
+				d.appendChild(a);
+
+				p[pi].appendChild(d);
+				i++;
+			});
+
+			p.forEach(function(item) {
+				document.body.appendChild(item);
+			});
+		};
+
+		window.onresize = function(event) {
+			location.reload();
+		};
+	</script>
+</body>
+</html>

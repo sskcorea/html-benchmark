@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<title>Result</title>
+<head>
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css"
+	href="lib/DataTables-1.10.2/media/css/jquery.dataTables.css">
+
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8"
+	src="lib/DataTables-1.10.2/media/js/jquery.js"></script>
+
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8"
+	src="lib/DataTables-1.10.2/media/js/jquery.dataTables.js"></script>
+</head>
+<body>
+	<script src="lib/Utility.js"></script>
+	<script src="lib/Chart.js"></script>
+	<script src="js/Summary.js"></script>
+
+	<h1 align="center">Average running time (ms)</h1>
+	<canvas id="chart1" height="400px"></canvas>
+	<table cellpadding="0" cellspacing="0" border="0" class="display"
+		id="gridTime"></table>
+
+	<h1 align="center">Runs per second (runs)</h1>
+	<canvas id="chart2" height="400px"></canvas>
+
+	<h1 align="center">Average frame per second (fps)</h1>
+	<canvas id="chart3" height="400px"></canvas>
+	<table cellpadding="0" cellspacing="0" border="0" class="display"
+		id="gridFPS"></table>
+</body>
+</html>
